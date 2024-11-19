@@ -1,0 +1,37 @@
+0 xxxx -> E 0 # if there are no walls move east
+
+0 *E** -> X 1 # when picobot hits east wall move into state 1
+
+1 x*xx -> W 1 # picobot move west until it hits the wall
+
+1 **W* -> N 2 #If I am in state 1 and there is a wall to my west, move a step north and change to state 2
+
+2 xx*x -> E 0 #If I am in state 2 and there is a wall to my West, turn East and return back to state 0
+
+2 NxWx -> X 3 #If in state 2 there is a wall to my north and west, move into state 3. 
+
+3 *x*x -> S 3 #If in state 3 move south 
+
+3 **WS -> E 4 #If in state 3 and there's a wall to my west and south, move east
+
+4 x**S -> N 5 #If in state 4 and there's a wall to my S move North and into state 5
+
+5 x*** -> N 5 #If in state 5 there are no walls move North
+
+5 Nxxx -> S 3 #if in state 5 and there is a wall to my North move south into state 3
+
+3 xxxS -> E 4 #if in state 3 and there's a wall to my south move east into state 4
+
+0 xxWx -> E 1
+
+0 Nxxx -> S 1
+
+0 xxxS -> N 1
+
+0 NxW* -> E 0
+
+1 xExS -> N 1
+
+0 xxWS -> N 1
+
+1 NExx -> S 0

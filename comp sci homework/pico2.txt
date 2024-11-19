@@ -1,0 +1,35 @@
+0 ***x -> S 0
+
+0 xE*S -> N 1
+
+1 x*** -> N 1
+
+1 NE*x -> S 2
+
+2 xxx* -> E 2
+
+2 NExx -> S 0
+
+2 NExS -> W 3
+
+3 xxxx -> W 3
+
+3 NxWS -> E 4
+
+4 xxxx -> S 5
+
+5 x*WS -> N 5
+
+5 xxxx -> N 6
+
+6 NxWS -> E 6
+
+6 ***x -> S 0
+
+0 xxWS -> N 1
+
+1 NxWx -> E 6
+
+0 N*WS -> E 0
+
+0 NExS -> W 3
